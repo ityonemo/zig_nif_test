@@ -13,3 +13,15 @@ Key files can be found in:
 `lib/zig_nif_test.ex` - parameters for compiling the zig nif
 
 `test/nif_test_test.exs` - tests on c and zig
+
+
+Running it:
+
+```
+iex(1)> ZigNifTest.zig_compare(2, 1)
+1
+iex(2)> ZigNifTest.zig_compare(2, 2)
+0
+iex(3)> ZigNifTest.zig_compare(1, 2)
+-1
+```
