@@ -1,21 +1,13 @@
 # NifTest
 
-**TODO: Add description**
+**Just Testing Nifs in Zig**
 
-## Installation
+Key files can be found in:
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `nif_test` to your list of dependencies in `mix.exs`:
+`nif/my_nif.c`  - demo nif in c
+`nif/zig_nif.zig` - same nif in zig
 
-```elixir
-def deps do
-  [
-    {:nif_test, "~> 0.1.0"}
-  ]
-end
-```
+`lib/nif_test.ex` - parameters for compiling the C nif
+`lib/zig_nif_test.ex` - parameters for compiling the zig nif
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/nif_test](https://hexdocs.pm/nif_test).
-
+`test/nif_test_test.exs` - tests on c and zig
